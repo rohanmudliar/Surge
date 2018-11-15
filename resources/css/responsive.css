@@ -84,6 +84,11 @@ only screen and (hover: none) {
         font-size: 3.8rem;
         font-weight: 900;
     }
+
+    /* section.projects  .container {
+        width: 1150px;
+        /* background-color: black; 
+    } */
 }
 
 /* 
@@ -104,6 +109,11 @@ sm
 
 @media (min-width: 481px) and (max-width: 767px),
 only screen and (hover: none) {
+
+    /* section.projects  .container {
+        width: 1150px;
+        /* background-color: blue; 
+    } */
 
     section.landingPage div.carousel nav {
         top: 0px;
@@ -215,6 +225,11 @@ only screen and (hover: none) {
         bottom: -30px;
         font-size: 3.8rem;
         font-weight: 900;
+    }
+
+
+    section.projects div.container .card {
+        margin-right: 0px;
     }
 }
 
@@ -333,5 +348,9 @@ only screen and (hover: none) {
     
     section.landingPage header div.introduction .bottom {
         font-size: 3.8rem;
+    }
+
+    section.projects div.container .card {
+        margin-right: 0px;
     }
 }
