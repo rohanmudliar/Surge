@@ -1,0 +1,337 @@
+/* 
+xl-1200
+lg- 992 - 1199
+md- 768 - 991
+sm- 576 - 767
+xs- 0 -575
+*/
+
+/* 
+##Device = Desktops
+##Screen = 1281px to higher resolution desktops
+xl
+*/
+@media (min-width: 1281px) { 
+
+
+
+}
+
+/* 
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1280px
+xl
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+/*
+##Device = Tablets, Ipads (portrait)
+##Screen = B/w 768px to 1024px
+lg
+*/
+
+@media (min-width: 768px) and (max-width: 1024px), 
+only screen and (hover: none) {
+    section.landingPage div.carousel nav {
+        top: 15px;
+    }
+
+    section.landingPage div.carousel nav ul.topnav li {
+        padding: 15px;
+    }
+
+    section.landingPage div.carousel nav ul.topnav li a {
+        font-size: 13px;
+        padding-bottom: 8px;
+    }
+
+    section.landingPage header div.introduction {
+        width: 80%;
+        padding: 50px 40px 50px 160px;
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+        color: #fff;
+    }
+
+    section.landingPage header div.introduction h1 p{
+        font-size: 1.1em;
+    }
+
+    section.landingPage header div.introduction p{
+        font-size: .9em;
+        text-align: justify;
+    }
+
+    section.landingPage header div.introduction button {
+        padding: 8px 45px;
+        color: white;
+        font-weight: 700;
+        font-size: 1.1em;  
+    }
+    
+    section.landingPage header div.introduction button:active {
+        transform: scale(1);  
+    }
+    
+    section.landingPage header div.introduction .bottom {
+        font-family: 'Orbitron', sans-serif;
+        position: absolute;
+        bottom: -40px;
+        font-size: 3.8rem;
+        font-weight: 900;
+    }
+}
+
+/* 
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+md
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape), only screen and (hover: none) {
+
+}
+
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+sm
+*/
+
+@media (min-width: 481px) and (max-width: 767px),
+only screen and (hover: none) {
+
+    section.landingPage div.carousel nav {
+        top: 0px;
+        right: 0px;
+    }
+
+    section.landingPage div.carousel nav ul.topnav {
+        padding-top: 15px;
+    }
+
+    section.landingPage div.carousel nav ul.topnav li {
+        display: none;
+    }
+
+    section.landingPage div.carousel nav ul.topnav li.dropDownIcon {
+        display: block; 
+    }
+
+    section.landingPage div.carousel nav ul.topnav li.dropDownIcon a {
+        font-size: 2.5rem;
+    }
+
+    section.landingPage div.carousel nav ul.topnav li.dropDownIcon a:hover {
+        border-bottom: 2px solid transparent;
+        color: white;
+    }
+    
+
+    section.landingPage div.carousel nav ul.topnav.responsive {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: 0;
+        background-color: rgba(0, 0, 0, 0.95);
+        float: left;
+        width: 100%;
+    }
+
+    section.landingPage div.carousel nav ul.topnav.responsive li {
+        display: block;
+        float: none;
+        padding: 14px;
+    }
+
+    section.landingPage div.carousel nav ul.topnav.responsive li a {
+        display: inline;
+        text-align: left;
+        margin-left: 10%;
+        padding-bottom: 7px;
+        /* background-color: red; */
+        /* width: 60px; */
+    }
+
+
+    section.landingPage div.carousel nav ul.topnav.responsive li.dropDownIcon {
+        border-bottom: 2px solid transparent;
+        color: white;
+        position: absolute;
+        top: 0;
+        right: 0px;
+        /* background-color: red; */
+    }
+
+    section.landingPage header div.introduction {
+        width: 100%;
+        padding: 50px 10px 10px 10px;
+        position: absolute;
+        top:42%;
+        transform: translateY(-50%);
+        color: #fff;
+    }
+
+    section.landingPage header div.introduction h1 {
+        text-align: center;
+        font-size: 2em;
+    }
+
+    section.landingPage header div.introduction h1 p{
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    section.landingPage header div.introduction p{
+        padding: 10px 20px;
+        font-size: .9em;
+        text-align: justify;
+    }
+
+    section.landingPage header div.introduction .buttonWrap {
+        text-align: center;
+    margin-top: 10px;
+
+    }
+
+    section.landingPage header div.introduction button {
+        padding: 8px 40px;
+        color: white;
+        font-weight: 700;
+        font-size: 1em;  
+    }
+    
+    section.landingPage header div.introduction button:active {
+        transform: scale(1);  
+    }
+    
+    section.landingPage header div.introduction .bottom {
+        font-family: 'Orbitron', sans-serif;
+        position: absolute;
+        bottom: -30px;
+        font-size: 3.8rem;
+        font-weight: 900;
+    }
+}
+
+
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+xs
+*/
+
+@media (min-width: 320px) and (max-width: 480px),
+only screen and (hover: none) {
+
+    section.landingPage div.carousel nav {
+        top: 0px;
+        right: 0px;
+    }
+
+    section.landingPage div.carousel nav ul.topnav {
+        padding-top: 15px;
+    }
+
+    section.landingPage div.carousel nav ul.topnav li {
+        display: none;
+    }
+
+    section.landingPage div.carousel nav ul.topnav li.dropDownIcon {
+        display: block; 
+    }
+
+    section.landingPage div.carousel nav ul.topnav li.dropDownIcon a {
+        font-size: 2.5rem;
+    }
+
+    section.landingPage div.carousel nav ul.topnav li.dropDownIcon a:hover {
+        border-bottom: 2px solid transparent;
+        color: white;
+    }
+    
+
+    section.landingPage div.carousel nav ul.topnav.responsive {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: 0;
+        background-color: rgba(0, 0, 0, 0.95);
+        float: left;
+        width: 100%;
+    }
+
+    section.landingPage div.carousel nav ul.topnav.responsive li {
+        display: block;
+        float: none;
+        padding: 10px;
+    }
+
+    section.landingPage div.carousel nav ul.topnav.responsive li a {
+        display: inline;
+        text-align: left;
+        margin-left: 5%;
+        padding-bottom: 5px;
+        /* background-color: red; */
+        /* width: 60px; */
+    }
+
+
+    section.landingPage div.carousel nav ul.topnav.responsive li.dropDownIcon {
+        border-bottom: 2px solid transparent;
+        color: white;
+        position: absolute;
+        top: 0;
+        right: 0px;
+        /* background-color: red; */
+    }
+
+    section.landingPage header div.introduction {
+        width: 100%;
+        padding: 50px 10px 10px 10px;
+        position: absolute;
+        top:45%;
+        transform: translateY(-50%);
+        color: #fff;
+    }
+
+    section.landingPage header div.introduction h1 {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    section.landingPage header div.introduction h1 p{
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    section.landingPage header div.introduction p{
+        padding: 10px 20px;
+        font-size: .9em;
+        text-align: justify;
+    }
+
+    section.landingPage header div.introduction .buttonWrap {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    section.landingPage header div.introduction button {
+        padding: 8px 40px;
+        color: white;
+        font-weight: 700;
+        font-size: 1em;  
+    }
+    
+    section.landingPage header div.introduction button:active {
+        transform: scale(1);  
+    }
+    
+    section.landingPage header div.introduction .bottom {
+        font-size: 3.8rem;
+    }
+}

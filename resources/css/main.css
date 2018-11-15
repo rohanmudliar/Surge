@@ -1,3 +1,185 @@
-body {
-    background-color: orangered;
+/* -------------Defaults ------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
 }
+
+body {
+    margin: 0;
+    padding:0;
+}
+/* ----------------------------- */
+
+/* ---------- Landing Section ------------*/
+section {
+    margin: 0;
+    padding: 0;
+}
+
+section.landingPage div.carousel{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    position: relative;
+}
+
+section.landingPage div.carousel nav {
+    display: block;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    height: 40px;
+    z-index: 999;
+}
+
+section.landingPage div.carousel nav ul.topnav {
+    /* background-color: rgba(0, 0, 0, 0.404); */
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    float:right;
+}
+
+section.landingPage div.carousel nav ul.topnav li {
+    list-style: none;
+    float: left;
+    padding: 20px;
+}
+
+section.landingPage div.carousel nav ul.topnav li a {
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 10px;
+    text-transform: uppercase; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    border-bottom: 2px solid transparent;
+    transition: all .2s;
+}
+
+section.landingPage div.carousel nav ul.topnav li a:hover {
+    cursor: pointer;
+    color: rgb(255, 71, 25);;
+    border-bottom: 2px solid rgb(255, 71, 25);;
+}
+
+section.landingPage div.carousel nav ul.topnav li.dropDownIcon {
+    display: none;
+    font-size: 2em;
+}
+
+
+section.landingPage div.carousel div.item {
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+}
+
+section.landingPage div.carousel #slide1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(bgImages/background1.jpg);
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover;
+}
+
+section.landingPage div.carousel #slide2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(bgImages/background2.jpg);
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover;
+}
+
+section.landingPage div.carousel #slide3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(bgImages/background3.jpg);
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover;
+}
+
+section.landingPage div.carousel #slide4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(bgImages/background4.jpg);
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover;
+}
+
+section.landingPage header div.introduction {
+    width: 65%;
+    /* background-color: red; */
+    padding: 50px 40px 50px 160px;
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+section.landingPage header div.introduction h1 {
+    font-weight: 200; 
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section.landingPage header div.introduction h1 p{
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4em;
+}
+
+section.landingPage header div.introduction p{
+    font-size: 1.2em;
+    text-align: justify;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+}
+
+section.landingPage header div.introduction .buttonWrap {
+    margin-top: 30px;
+}
+
+section.landingPage header div.introduction button {
+    padding: 10px 50px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.3em;
+    background-color: rgb(255, 71, 25);
+    border: 1px solid white;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+    transform: scale(1);
+    transition: all .2s;   
+}
+
+section.landingPage header div.introduction button:hover {
+    border: 1px solid rgb(255, 71, 25);
+    background-color: transparent;
+    color: rgb(255, 71, 25);
+    -webkit-box-shadow: -5px 15px 5px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -5px 15px 5px 1px rgba(0,0,0,0.75);
+    box-shadow: -5px 15px 5px 1px rgba(0,0,0,0.75);
+    transform: scale(1.2);
+}
+
+section.landingPage header div.introduction button:active {
+    transform: scale(1);  
+}
+
+section.landingPage .bottom {
+    font-family: 'Orbitron', sans-serif;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 4rem;
+    font-weight: 900;
+    color: white;
+}
+
