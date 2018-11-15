@@ -61,13 +61,13 @@ section.landingPage div.carousel nav ul.topnav li a {
     font-weight: bold;
     color: #fff;
     border-bottom: 2px solid transparent;
-    transition: all .2s;
+    transition: all .7s;
 }
 
 section.landingPage div.carousel nav ul.topnav li a:hover {
     cursor: pointer;
     color: rgb(255, 71, 25);;
-    border-bottom: 2px solid rgb(255, 71, 25);;
+    border-bottom: 2px solid rgb(255, 71, 25);
 }
 
 section.landingPage div.carousel nav ul.topnav li.dropDownIcon {
@@ -185,6 +185,65 @@ section.landingPage .bottom {
 
 /* ----------------------------------------- */
 
+/* ------------- About Section -------------- */
+section.about {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    position: relative;
+    padding: 60px 0px;
+    font-family: 'Lato', sans-serif;
+    background-color: #eee;
+}
+
+section.about h2 {
+    text-transform: uppercase;
+    font-size: 2em;
+    padding-left: 30px;
+    position: relative;
+    bottom: -8%;
+}
+
+section.about h1 {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12em;
+    padding-left: 30px;
+}
+
+section.about h6 {
+    margin: 0 0 30px 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2em;
+    padding-left: 58%;
+    position: relative;
+    top: -7%;
+}
+
+section.about .first {
+    padding-top: 20px;
+}
+
+section.about img{
+    width: 100%;
+    height: 250px;
+}
+
+section.about .forPara {
+    padding: 30px;
+}
+
+section.about p {
+    text-align: justify;
+}
+
+
+
+/* ------------------------------------------ */
+
 /* ---------------Projects Section--------- */
 section.projects {
     /* background-color: red; */
@@ -221,9 +280,9 @@ section.projects div.container .card {
 }
 
 section.projects div.container .card:hover {
-    -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.52);
-    -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.52);
-    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.52);
+    -webkit-box-shadow: 2px 3px 8px 1px rgba(0,0,0,0.55);
+    -moz-box-shadow: 2px 3px 8px 1px rgba(0,0,0,0.55);
+    box-shadow: 2px 3px 8px 1px rgba(0,0,0,0.55);
 }
 
 section.projects div.container .card:hover .color1 {
@@ -267,14 +326,17 @@ section.projects div.container .third .color3 {
 
 section.projects div.container .first h4 {
     color: #fb8f54;
+    margin-top: 30px;
 }
 
 section.projects div.container .second h4 {
     color: #2998ff;
+    margin-top: 30px;
 }
 
 section.projects div.container .third h4 {
     color: #28b485;
+    margin-top: 30px;
 }
 
 section.projects div.container .card h4 {
