@@ -5,7 +5,9 @@
     box-sizing: border-box;
     text-rendering: optimizeLegibility;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     padding:0;
@@ -30,13 +32,11 @@ section.landingPage div.carousel{
 }
 
 section.landingPage div.carousel nav {
-    display: block;
+    background: transparent;
     width: 100%;
-    margin: 0;
-    position: absolute;
-    top: 20px;
-    right: 15px;
-    height: 40px;
+    margin-top: 0;
+    position: fixed;
+    height: 80px;
     z-index: 999;
 }
 
@@ -51,7 +51,7 @@ section.landingPage div.carousel nav ul.topnav {
 section.landingPage div.carousel nav ul.topnav li {
     list-style: none;
     float: left;
-    padding: 20px;
+    padding: 33px 22px;
 }
 
 section.landingPage div.carousel nav ul.topnav li a {
@@ -68,15 +68,17 @@ section.landingPage div.carousel nav ul.topnav li a {
     transition: all .7s;
 }
 
-section.landingPage div.carousel nav ul.topnav li a:hover {
+section.landingPage div.carousel nav ul.topnav li a:hover{
     cursor: pointer;
     color: rgb(255, 71, 25);;
-    border-bottom: 2px solid rgb(255, 71, 25);
+    border-bottom: 2px solid rgb(255, 71, 25);;
+    transform: scaleX(1);
 }
 
 section.landingPage div.carousel nav ul.topnav li.dropDownIcon {
     display: none;
     font-size: 2em;
+    transition: 0.3s;
 }
 
 
@@ -181,10 +183,153 @@ section.landingPage .bottom {
     font-family: 'Orbitron', sans-serif;
     position: absolute;
     bottom: 20px;
-    left: 20px;
+    left: 160px;
     font-size: 4rem;
     font-weight: 900;
     color: white;
+}
+
+/*Section3 starts here*/
+
+.section3{
+    width: 100%;
+    height: 100vh;
+}
+
+.section3_left_content{
+    display: block;
+    margin-top: 120px;
+    left: 100px;
+    position: absolute;
+    /*border:2px solid black;*/
+    width: 50%;
+}
+.Vision{
+    display: block;
+    padding: 50px;
+}
+.Roadmap{
+       display: block;
+    padding: 50px;
+}
+.Solution{
+display: block;
+    padding: 50px;
+}
+.dot_1{
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    display: block;
+    margin-top: 200px;
+    left: 550px;
+    background-color: #C14F26;
+
+}
+.dot_2{
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    display: block;
+    margin-top: 350px;
+    left: 550px;
+    background-color: #C14F26;
+}
+.dot_3   {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    display: block;
+    margin-top: 510px;
+    left: 550px;
+    background-color: #C14F26;
+}
+.dot01{
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    display: block;
+    margin-top: 200px;
+    left: 548px;
+    transition:0.5s;
+    background-color: #C14F26;
+}
+.dot02{
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    display: block;
+    margin-top: 347px;
+    left: 548px;
+    transition:0.5s;
+    transition-delay: 1s;
+    background-color: #C14F26;
+}
+
+.dot03{
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    transition:0.5s;
+    position: absolute;
+    display: block;
+    margin-top: 510px;
+    left: 548px;
+    transition-delay: 2.1s;
+
+    background-color: #C14F26;
+}
+.line_1{
+    height:0;
+    width: 2px;
+    background: red;
+    -webkit-transition-property: height; /* Safari */
+    -webkit-transition-duration: 1.4s; /* Safari */
+    transition-property: height;
+    transition-duration: 1.4s;
+}
+.line_2{
+    height:0;
+    width: 2px;
+    background: red;
+    -webkit-transition-property: height; /* Safari */
+    -webkit-transition-duration: 2.4s; /* Safari */
+    transition-property: height;
+    transition-delay: 1.4s;
+    transition-duration: 1.4s;
+}
+
+.line01{
+    height:120px;
+    width: 2px;
+    background: black;
+    margin-left: 7px;
+    margin-top: 21px;
+}
+.line02{
+    height:130px;
+    width: 2px;
+    background: black;
+    margin-left: 7px;
+    margin-top: 21px;
+}
+
+.section3_right_content{
+    display: block;
+    margin-top: 150px;
+    right: 30px;
+    position: absolute;
+   /* border:2px solid black;*/
+    width: 50%;
+    font-size: 20px;
+}
+.para{
+    padding:25px;
 }
 
 /* ----------------------------------------- */
@@ -412,3 +557,4 @@ section.projects div.container .third button:hover {
 
 
 /* --------------------------------------- */
+
