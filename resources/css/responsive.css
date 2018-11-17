@@ -55,15 +55,18 @@ only screen and (hover: none) {
         top:50%;
         transform: translateY(-50%);
         color: #fff;
+
     }
 
     section.landingPage header div.introduction h1 p{
         font-size: 1.1em;
+        transition: 0.2s;
     }
 
     section.landingPage header div.introduction p{
         font-size: .9em;
         text-align: justify;
+        transition: 0.2s;
     }
 
     section.landingPage header div.introduction button {
@@ -71,6 +74,7 @@ only screen and (hover: none) {
         color: white;
         font-weight: 700;
         font-size: 1.1em;  
+        transition: 0.2s;
     }
     
     section.landingPage header div.introduction button:active {
@@ -83,6 +87,42 @@ only screen and (hover: none) {
         bottom: -40px;
         font-size: 3.8rem;
         font-weight: 900;
+        transition: 0.2s;
+    }
+       .section3_left_content{
+        left: 0;
+
+    transition:0.2s;
+    }
+      .section3.dot_1{
+      display: block;
+      float: left;
+      margin-left: 10px;
+
+    transition:0.2s;
+    }
+    .Vision{
+        font-size: 25px;
+            transition:0.2s;
+
+    }
+    .Roadmap{
+    display: block;
+    font-size: 25px;
+    margin-right:10px;
+        transition:0.2s;
+
+    }
+    .Solution{
+    display: block;
+    font-size: 25px;
+        transition:0.2s;
+
+    }
+    .para{
+        font-size: 15px;
+            transition:0.2s;
+
     }
 
     section.about h2 {
@@ -188,17 +228,20 @@ only screen and (hover: none) {
     section.landingPage header div.introduction h1 {
         text-align: center;
         font-size: 2em;
+        transition: 0.2s;
     }
 
     section.landingPage header div.introduction h1 p{
         font-size: 1.5em;
         text-align: center;
+        transition: 0.2s;
     }
 
     section.landingPage header div.introduction p{
         padding: 10px 20px;
         font-size: .9em;
         text-align: justify;
+        transition: 0.2s;
     }
 
     section.landingPage header div.introduction .buttonWrap {
@@ -224,9 +267,51 @@ only screen and (hover: none) {
         bottom: -30px;
         font-size: 3.8rem;
         font-weight: 900;
+        transition: 0.2s;
+    }
+    .section3_left_content{
+        left: 0;
+            transition:0.2s;
+
+    }
+      .section3.dot_1{
+      display: block;
+      float: left;
+      margin-left: 10px;
+          transition:0.2s;
+
+    }
+    .Vision{
+        font-size: 22px;
+            transition:0.2s;
+
     }
 
-    
+    .Roadmap{
+    display: block;
+    font-size: 22px;
+    margin-right:10px;
+        transition:0.2s;
+
+
+    }
+    .Solution{
+    display: block;
+    font-size: 22px;
+        transition:0.2s;
+
+    }
+    .para{
+        font-size: 15px;
+            transition:0.2s;
+
+    }
+    .progress{
+    display: block;
+    float: left;
+    border:2px solid black;
+ }
+
 
 
     section.projects div.container .card {
@@ -303,6 +388,7 @@ only screen and (hover: none) {
         position: absolute;
         top: 0;
         right: 0px;
+
         /* background-color: red; */
     }
 
@@ -341,15 +427,58 @@ only screen and (hover: none) {
         color: white;
         font-weight: 700;
         font-size: 1em;  
+        transition: 0.2s;
     }
     
     section.landingPage header div.introduction button:active {
         transform: scale(1);  
     }
     
-    section.landingPage header div.introduction .bottom {
+    section.landingPage .bottom {
         font-size: 3.8rem;
+        transition: 0.5s;
+        left:175px;
+        bottom: 50px;
     }
+
+      .section3_left_content{
+        left: 0;
+        transition:0.2s;
+
+    }
+      .section3.dot_1{
+      display: block;
+      float: left;
+      margin-left: 10px;
+      transition:0.2s;
+
+    }
+    .Vision{
+        font-size: 22px;
+        transition:0.2s;
+
+    }
+    .Roadmap{
+    display: block;
+    font-size: 22px;
+    margin-right:10px;
+    margin-top: 78px;
+    transition:0.2s;
+
+    }
+    .Solution{
+    display: block;
+    font-size: 22px;
+      margin-top: 80px;
+      transition:0.2s;
+
+    }
+    .para{
+        transition:0.2s;
+        font-size: 15px;
+    }
+
+
 
     section.about h2 {
         padding-left: 0px;
@@ -374,4 +503,5 @@ only screen and (hover: none) {
     section.projects div.container .card {
         margin-right: 0px;
     }
+
 }
