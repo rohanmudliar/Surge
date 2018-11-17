@@ -124,6 +124,16 @@ only screen and (hover: none) {
             transition:0.2s;
 
     }
+
+    section.about h2 {
+        padding-left: 0px;
+        
+    }
+
+    section.about h1 {
+        padding-left: 0px;
+    }
+
 }
 
 /* 
@@ -171,7 +181,6 @@ only screen and (hover: none) {
         color: white;
     }
     
-
     section.landingPage div.carousel nav ul.topnav.responsive {
         position: relative;
         top: 0;
@@ -277,6 +286,7 @@ only screen and (hover: none) {
             transition:0.2s;
 
     }
+
     .Roadmap{
     display: block;
     font-size: 22px;
@@ -301,6 +311,12 @@ only screen and (hover: none) {
     float: left;
     border:2px solid black;
  }
+
+
+
+    section.projects div.container .card {
+        margin-right: 0px;
+    }
 }
 
 
@@ -460,6 +476,32 @@ only screen and (hover: none) {
     .para{
         transition:0.2s;
         font-size: 15px;
+    }
+
+
+
+    section.about h2 {
+        padding-left: 0px;
+        text-transform: uppercase;
+        font-size: 1.7em;
+        text-align: center;
+    }
+
+    section.about h1 {
+        padding-left: 0px;
+        font-size: 9em;
+        text-align: center;
+    } 
+
+    section.about h6 {
+        font-size: 1em;
+        padding-left: 70%;
+    }
+
+
+
+    section.projects div.container .card {
+        margin-right: 0px;
     }
 
 }

@@ -61,7 +61,7 @@ section.landingPage div.carousel nav ul.topnav li a {
     font-weight: bold;
     color: #fff;
     border-bottom: 2px solid transparent;
-    transition: all .2s;
+    transition: all .7s;
 }
 
 section.landingPage div.carousel nav ul.topnav li a:hover{
@@ -327,3 +327,230 @@ display: block;
 .para{
     padding:25px;
 }
+
+/* ----------------------------------------- */
+
+/* ------------- About Section -------------- */
+section.about {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    position: relative;
+    padding: 60px 0px;
+    font-family: 'Lato', sans-serif;
+    background-color: #eee;
+}
+
+section.about h2 {
+    text-transform: uppercase;
+    font-size: 2em;
+    padding-left: 30px;
+    position: relative;
+    bottom: -8%;
+}
+
+section.about h1 {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12em;
+    padding-left: 30px;
+}
+
+section.about h6 {
+    margin: 0 0 30px 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2em;
+    padding-left: 58%;
+    position: relative;
+    top: -7%;
+}
+
+section.about .first {
+    padding-top: 20px;
+}
+
+section.about img{
+    width: 100%;
+    height: 250px;
+}
+
+section.about .forPara {
+    padding: 30px;
+}
+
+section.about p {
+    text-align: justify;
+}
+
+
+
+/* ------------------------------------------ */
+
+/* ---------------Projects Section--------- */
+section.projects {
+    /* background-color: red; */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    position: relative;
+    padding: 60px 0;
+}
+
+section.projects div.container h1 {
+    font-family: 'Montserrat', sans-serif;
+    /* font-weight: 700; */
+    text-align: center;
+}
+
+section.projects div.container p {
+    text-align: center;
+}
+
+section.projects div.container .card {
+    /* background-color: red; */
+    padding:0;
+    z-index: 888;
+    /* border: 1px solid rgb(160, 160, 160); */
+    border-radius: 7px;
+    overflow: hidden;
+    margin-bottom: 10%;
+    -webkit-box-shadow: 10px 10px 25px -3px rgba(0,0,0,0.52);
+    -moz-box-shadow: 10px 10px 25px -3px rgba(0,0,0,0.52);
+    box-shadow: 10px 10px 25px -3px rgba(0,0,0,0.52);
+    transition: all .2s;
+    margin-right: 40px;
+}
+
+section.projects div.container .card:hover {
+    -webkit-box-shadow: 2px 3px 8px 1px rgba(0,0,0,0.55);
+    -moz-box-shadow: 2px 3px 8px 1px rgba(0,0,0,0.55);
+    box-shadow: 2px 3px 8px 1px rgba(0,0,0,0.55);
+}
+
+section.projects div.container .card:hover .color1 {
+    transform: scale(1.05);
+}
+
+section.projects div.container .card:hover .color2 {
+    transform: scale(1.05);
+}
+
+section.projects div.container .card:hover .color3 {
+    transform: scale(1.05);
+}
+
+section.projects div.container .first .color1 {
+    height: 180px;
+    background-blend-mode: screen;
+    background-image: linear-gradient(to right bottom, #fb8f54,#fdcb40b2), url(../images/bigmart.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all .3s;
+}
+
+section.projects div.container .second .color2 {
+    height: 180px;
+    background-blend-mode: screen;
+    background-image: linear-gradient(to right bottom, #2998ff,#5643fa), url(../images/stockprices.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all .3s;
+}
+
+section.projects div.container .third .color3 {
+    height: 180px;
+    background-blend-mode: screen;
+    background-image: linear-gradient(to right bottom, #28b485,#55c75a), url(../images/handwriting.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all .3s;
+}
+
+section.projects div.container .first h4 {
+    color: #fb8f54;
+    margin-top: 30px;
+}
+
+section.projects div.container .second h4 {
+    color: #2998ff;
+    margin-top: 30px;
+}
+
+section.projects div.container .third h4 {
+    color: #28b485;
+    margin-top: 30px;
+}
+
+section.projects div.container .card h4 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+section.projects div.container .card h5 {
+    padding: 0 15px 15px 15px;
+    text-align: justify;
+}
+
+section.projects div.container .card button {
+    width: 60%;
+    padding: 10px 0px;
+    border-radius: 7px;
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+    border: 1px solid transparent;
+    transition: all .2s;
+}
+
+section.projects div.container .first button {
+    background-color: #fb8f54;
+}
+
+section.projects div.container .first button:hover {
+    background-color: transparent;
+    color: #fb8f54;
+    border: 1px solid #fb8f54;
+    -webkit-box-shadow: 7px 6px 23px -3px rgba(0,0,0,0.52);
+    -moz-box-shadow: 7px 6px 23px -3px rgba(0,0,0,0.52);
+    box-shadow: 7px 6px 23px -3px rgba(0,0,0,0.52);
+}
+
+section.projects div.container .second button {
+    background-color: #2998ff;
+}
+
+section.projects div.container .second button:hover {
+    background-color: transparent;
+    color: #2998ff;
+    border: 1px solid #2998ff;
+    -webkit-box-shadow: 7px 6px 23px -3px rgba(0,0,0,0.52);
+    -moz-box-shadow: 7px 6px 23px -3px rgba(0,0,0,0.52);
+    box-shadow: 7px 6px 23px -3px rgba(0,0,0,0.52);
+}
+
+section.projects div.container .third button {
+    background-color: #28b485;
+}
+
+section.projects div.container .third button:hover {
+    background-color: transparent;
+    color: #28b485;
+    border: 1px solid #28b485;
+    -webkit-box-shadow: 7px 6px 23px -3px rgba(0,0,0,0.52);
+    -moz-box-shadow: 7px 6px 23px -3px rgba(0,0,0,0.52);
+    box-shadow: 7px 6px 23px -3px rgba(0,0,0,0.52);
+}
+
+
+
+
+/* --------------------------------------- */
+
