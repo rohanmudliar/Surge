@@ -33,9 +33,9 @@
       <div class="carousel-inner">
         <nav id="myTopnav">
           <ul class="topnav" id="dropdownClick">
-            <li><a href="#about">about</a></li>
+            <li><a href="#sec1">about</a></li>
             <li><a href="#sec3" onclick="onclick_line()">solution</a></li>
-            <li><a href="#projects">projects</a></li>
+            <li><a href="#sec4">projects</a></li>
             <li><a href="#events">events</a></li>
             <li><a href="#bootcamp">bootcamp</a></li>
             <li><a href="#library">library</a></li>
@@ -128,7 +128,7 @@
     </div>
 
     <!-- Left and right controls -->
-<!--     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <!--     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left"></span>
       <span class="sr-only">Previous</span>
     </a>
@@ -142,7 +142,7 @@
 
   <!------------------- About section ---------- -->
 
-  <section class="about">
+  <section class="about" id="sec1">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-6 col-lg-7">
@@ -156,9 +156,14 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-md-6 col-lg-7 forPara">
-          <p>Our aim is to build a research and learning  foundation of AI and Machine Learning by bringing globally known researchers, mentors. We are working with academic institutions, industry, startups, incubators and accelerators to advance AI research and drive the application, adoption and commercialization of AI technologies across India.
-            </p>
-          <p>We will become the leader in AI in India by attracting, training,and retaining more top students, professionals and researchers who want to lead the world in machine learning and deep learning research, while having the flexibility to work on commercial applications with companies or in their own startups.</p>
+          <p>Our aim is to build a research and learning foundation of AI and Machine Learning by bringing globally
+            known researchers, mentors. We are working with academic institutions, industry, startups, incubators and
+            accelerators to advance AI research and drive the application, adoption and commercialization of AI
+            technologies across India.
+          </p>
+          <p>We will become the leader in AI in India by attracting, training,and retaining more top students,
+            professionals and researchers who want to lead the world in machine learning and deep learning research,
+            while having the flexibility to work on commercial applications with companies or in their own startups.</p>
         </div>
         <div class="col-md-5">
           <img src="resources/images/sail2.jpg" alt="aboutimage">
@@ -169,8 +174,44 @@
 
   <!-- -------------------------------------- -->
 
+  <!----------Solution section starts here------------------>
+  <section class="section3" id="sec3">
+    <aside class="section3_left_content">
+      <h2 class="Vision">Vision Development</h2>
+      <h2 class="Roadmap">Roadmap Development</h2>
+      <h2 class="Solution">Solution Deployment</h2>
+    </aside>
+    <div class="dot_1" id="dot1">
+      <div class="line_1" id="line1">
+      </div>
+    </div>
+    <div class="dot_2" id="dot2">
+      <div class="line_2" id="line2">
+      </div>
+    </div>
+    <div class="dot_3" id="dot3">
+    </div>
+    <aside class="section3_right_content">
+      <p class="para">
+        The first step is to develop a common understanding with your executive team around AI. We'll align around a
+        vision for a specific opportunities with in your industry
+      </p>
+      <p class="para">
+        Once there is a common vision of what what AI opportunities are available we'll wotk together to develop a
+        roadmap and priotize to align with the vision
+      </p>
+      <p class="para">
+        After we have a roadmap. We'll work together to define requirements, validate data and deploy relevant and
+        impactful AI products. The goal is to implement a suite of AI processes that drive significant return on
+        investment and efficiency within organization.
+      </p>
+    </aside>
+  </section>
+  <!----Solution section ends here---------------------->
+
+
   <!-- Projects section -->
-  <section class="projects" id="projects">
+  <section class="projects" id="sec4">
     <div class="container">
       <h1 class="font-weight-bold">Our best projects</h1>
       <div class="row justify-content-center">
@@ -215,36 +256,7 @@
 
   </section>
 
-  <section class="section3" id="sec3">
-    <aside class="section3_left_content">
-      <h2 class="Vision">Vision Development</h2> 
-      <h2 class="Roadmap">Roadmap Development</h2> 
-      <h2 class="Solution">Solution Deployment</h2> 
-    </aside>
-      <div class="dot_1" id="dot1">
-        <div class="line_1" id="line1">
-        </div>
-      </div>
-      <div class="dot_2" id="dot2">
-      <div class="line_2" id="line2">
-        </div>
-      </div>
-      <div class="dot_3" id="dot3">
-      </div>
-    <aside class="section3_right_content">
-      <p class="para">
-        The first step is to develop a common understanding with your executive team around AI. We'll align around a vision for a specific opportunities with in your industry
-      </p>
-       <p class="para">
-        Once there is a common vision of what what AI opportunities are available we'll wotk together to develop a roadmap and priotize to align with the vision
-      </p>
-       <p class="para">
-       After we have a roadmap. We'll work together to define requirements, validate data and deploy relevant and impactful AI products. The goal is to implement a suite of AI processes that drive significant return on investment and efficiency within organization.
-      </p>
-    </aside>
-  </section>
 
-  <!-- ------------------------------------- -->
 
 
   <script>
@@ -255,40 +267,40 @@
       } else {
         x.className = "topnav";
       }
-    } 
+    }
 
-    window.onscroll =function(){scrollFunction()};
+    window.onscroll = function () { scrollFunction() };
     function scrollFunction() {
-      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         document.getElementById("myTopnav").style.background = "#000";
         document.getElementById("myTopnav").style.transition = "1s";
-           var a = document.getElementById("dot1");
+        var a = document.getElementById("dot1");
         a.classList.add("dot01");
-      var b = document.getElementById("dot2");
-         b.classList.add("dot02");
-      var c = document.getElementById("dot3");
-       c.classList.add("dot03");
+        var b = document.getElementById("dot2");
+        b.classList.add("dot02");
+        var c = document.getElementById("dot3");
+        c.classList.add("dot03");
         var y = document.getElementById("line1");
         y.classList.add("line01");
-       var z= document.getElementById("line2");
-       z.classList.add("line02");
-       }
-       else{
+        var z = document.getElementById("line2");
+        z.classList.add("line02");
+      }
+      else {
         document.getElementById("myTopnav").style.background = "transparent";
-       }
+      }
     }
 
     function onclick_line() {
       var a = document.getElementById("dot1");
-        a.classList.add("dot01");
+      a.classList.add("dot01");
       var b = document.getElementById("dot2");
-         b.classList.add("dot02");
+      b.classList.add("dot02");
       var c = document.getElementById("dot3");
-       c.classList.add("dot02");
-     var y = document.getElementById("line1");
-     y.classList.add("line01");
-     var z= document.getElementById("line2");
-     z.classList.add("line02");
+      c.classList.add("dot02");
+      var y = document.getElementById("line1");
+      y.classList.add("line01");
+      var z = document.getElementById("line2");
+      z.classList.add("line02");
     }
   </script>
 

@@ -22,12 +22,98 @@ xl
 ##Screen = B/w 1025px to 1280px
 xl
 */
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-
+@media (min-width: 1211px) and (max-width: 1280px) {
+    .dot_1{
+    margin-top: 200px;
+   left: 500px;
+    }
+    .dot_2{
+    margin-top: 350px;
+    left: 500px;
+    }
+   
+   .dot_3   {
+     margin-top: 505px;
+    left: 500px;
+    }
+   .dot01{
+    margin-top: 200px;
+    left: 500px;
+transition-delay: 0s;
+   }
+   .dot02{
+    margin-top: 347px;
+    left: 500px;
+transition-delay: 0s;
+   }
+    .dot03{
+   
+  margin-top: 505px;
+    left: 500px;
+    transition-delay: 0s;
+    }
+   .line_1{
+    }
+   .line_2{
+    }
+    .line01{
+ 
+   margin-left: 7px;
+   margin-top: 21px;
+   }
+   .line02{
+  height:130px;
+   margin-left: 7px;
+   margin-top: 21px;
+   }
 }
+@media (min-width: 1025px) and (max-width: 1210px) {
+       .dot_1{
+    margin-top: 200px;
+   left: 480px;
+    }
+    .dot_2{
+    margin-top: 350px;
+    left:480px;
+    }
+   
+   .dot_3   {
+     margin-top: 505px;
+    left: 480px;
+    }
+   .dot01{
+    margin-top: 200px;
+    left: 480px;
+transition-delay: 0s;
+   }
+   .dot02{
+    margin-top: 347px;
+    left: 480px;
+transition-delay: 0s;
+   }
+    .dot03{
+   
+  margin-top: 505px;
+    left: 480px;
+    transition-delay: 0s;
+    }
+   .line_1{
+    }
+   .line_2{
+    }
+    .line01{
+ 
+   margin-left: 7px;
+   margin-top: 21px;
+   }
+   .line02{
+  height:130px;
+   margin-left: 7px;
+   margin-top: 21px;
+   }
+   }
 
-/*
+   /*
 ##Device = Tablets, Ipads (portrait)
 ##Screen = B/w 768px to 1024px
 lg
@@ -35,8 +121,10 @@ lg
 
 @media (min-width: 768px) and (max-width: 1024px), 
 only screen and (hover: none) {
+
     section.landingPage div.carousel nav {
-        top: 15px;
+        top: 0;
+        height: 60px;
     }
 
     section.landingPage div.carousel nav ul.topnav li {
@@ -104,6 +192,7 @@ only screen and (hover: none) {
     .Vision{
         font-size: 25px;
             transition:0.2s;
+            padding-left:150px;
 
     }
     .Roadmap{
@@ -111,18 +200,65 @@ only screen and (hover: none) {
     font-size: 25px;
     margin-right:10px;
         transition:0.2s;
+        padding-left:150px;
 
     }
     .Solution{
     display: block;
     font-size: 25px;
         transition:0.2s;
+        padding-left:150px;
 
     }
     .para{
         font-size: 15px;
-            transition:0.2s;
-
+        transition:0.2s;
+    }
+        .dot_1{
+     margin-top: 200px;
+    left: 100px;
+    transition:0s;
+  transition-delay: 0s; 
+     }
+     .dot_2{
+     margin-top: 340px;
+    left: 100px;
+  transition:0s;
+    transition-delay: 0s; 
+    }
+            
+    .dot_3   {
+      margin-top: 490px;
+    left: 100px;
+  transition:0s;
+  transition-delay: 0s; 
+    }
+    .dot01{
+     margin-top: 200px;
+    left: 100px;
+     }
+    .dot02{
+     margin-top: 340px;
+    left: 100px;
+     }
+     .dot03{
+    
+   margin-top: 490px;
+    left: 100px;
+     }
+    .line_1{
+     }
+    .line_2{
+     }
+     .line01{
+  height:110px;
+    margin-left: 7px;
+    margin-top: 21px;
+    }
+    .line02{
+   height:120px;
+    margin-left: 7px;
+    margin-top: 21px;
     }
 
     section.about h2 {
@@ -158,6 +294,7 @@ only screen and (hover: none) {
     section.landingPage div.carousel nav {
         top: 0px;
         right: 0px;
+        height: 60px;
     }
 
     section.landingPage div.carousel nav ul.topnav {
@@ -170,10 +307,13 @@ only screen and (hover: none) {
 
     section.landingPage div.carousel nav ul.topnav li.dropDownIcon {
         display: block; 
+        margin-right:20px;
+        padding: 0; 
     }
 
     section.landingPage div.carousel nav ul.topnav li.dropDownIcon a {
         font-size: 2.5rem;
+        margin-top: 0;
     }
 
     section.landingPage div.carousel nav ul.topnav li.dropDownIcon a:hover {
@@ -274,13 +414,7 @@ only screen and (hover: none) {
             transition:0.2s;
 
     }
-      .section3.dot_1{
-      display: block;
-      float: left;
-      margin-left: 10px;
-          transition:0.2s;
-
-    }
+     
     .Vision{
         font-size: 22px;
             transition:0.2s;
@@ -306,12 +440,50 @@ only screen and (hover: none) {
             transition:0.2s;
 
     }
-    .progress{
-    display: block;
-    float: left;
-    border:2px solid black;
- }
-
+    
+    .section3{
+        height: 120vh;
+   }
+    .dot_1{
+    margin-top: 200px;
+   left: 15px;
+    }
+    .dot_2{
+    margin-top: 350px;
+   left: 15px;
+    }
+   
+   .dot_3   {
+    margin-top: 540px;
+   left: 15px;
+    }
+   .dot01{
+    margin-top: 200px;
+   left: 13px;
+    }
+   .dot02{
+    margin-top: 347px;
+   left: 13px;
+    }
+    .dot03{
+   
+  margin-top: 540px;
+   left: 13px;
+    }
+   .line_1{
+    }
+   .line_2{
+    }
+    .line01{
+ 
+   margin-left: 7px;
+   margin-top: 21px;
+   }
+   .line02{
+  height:160px;
+   margin-left: 7px;
+   margin-top: 21px;
+   }
 
 
     section.projects div.container .card {
@@ -332,6 +504,7 @@ only screen and (hover: none) {
     section.landingPage div.carousel nav {
         top: 0px;
         right: 0px;
+        height: 60px;
     }
 
     section.landingPage div.carousel nav ul.topnav {
@@ -344,6 +517,8 @@ only screen and (hover: none) {
 
     section.landingPage div.carousel nav ul.topnav li.dropDownIcon {
         display: block; 
+        margin-right:25px;
+        padding: 0; 
     }
 
     section.landingPage div.carousel nav ul.topnav li.dropDownIcon a {
@@ -353,6 +528,7 @@ only screen and (hover: none) {
     section.landingPage div.carousel nav ul.topnav li.dropDownIcon a:hover {
         border-bottom: 2px solid transparent;
         color: white;
+        padding: 0;
     }
     
 
@@ -444,8 +620,11 @@ only screen and (hover: none) {
       .section3_left_content{
         left: 0;
         transition:0.2s;
-
+        margin-top:  60px;
     }
+   .section3_right_content{
+       margin-top: 60px;
+   }
       .section3.dot_1{
       display: block;
       float: left;
@@ -478,7 +657,9 @@ only screen and (hover: none) {
         font-size: 15px;
     }
 
-
+    .section3{
+        height: 120vh;
+    }
 
     section.about h2 {
         padding-left: 0px;
@@ -498,7 +679,47 @@ only screen and (hover: none) {
         padding-left: 70%;
     }
 
-
+    .dot_1{
+        margin-top: 150px;
+       left: 15px;
+        }
+        .dot_2{
+        margin-top: 370px;
+       left: 15px;
+        }
+       
+       .dot_3   {
+        margin-top: 600px;
+       left: 15px;
+        }
+       .dot01{
+          margin-top: 147px;
+       left: 13px;
+        }
+       .dot02{
+        margin-top: 368px;
+       left: 13px;
+        }
+        .dot03{
+       
+      margin-top: 598px;
+       left: 13px;
+        }
+       .line_1{
+        }
+       .line_2{
+        }
+        .line01{
+     
+       margin-left: 7px;
+       margin-top: 21px;
+       height:190px;
+       }
+       .line02{
+      height:200px;
+       margin-left: 7px;
+       margin-top: 21px;
+           }
 
     section.projects div.container .card {
         margin-right: 0px;

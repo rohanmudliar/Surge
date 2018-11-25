@@ -5,9 +5,7 @@
     box-sizing: border-box;
     text-rendering: optimizeLegibility;
 }
-html{
-    scroll-behavior: smooth;
-}
+
 body {
     margin: 0;
     padding:0;
