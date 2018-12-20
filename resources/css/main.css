@@ -9,11 +9,42 @@
 body {
     margin: 0;
     padding:0;
+    height:100%;
+    /* background: linear-gradient(rgb(0, 0, 0), black); */
+    z-index: 999999;
+    position: relative;
+    top:0;
+    left: 0;
+    
+    /* visibility: visible; */
+    
+    transition: all .3s;
+}
+
+.overflowClass {
+    overflow: hidden;
+    /* background: linear-gradient(rgb(0, 0, 0), black); */
+    /* opacity: .5; */
+    /* visibility: hidden; */
+    transition: all .3s;
+    /* -khtml-opacity:.50; 
+ -moz-opacity:.50; 
+ -ms-filter:"alpha(opacity=50)";
+  filter:alpha(opacity=50);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.5);
+  opacity:.50; */
 }
 
 html {
     scroll-behavior: smooth;
+    height:100%;
+    /* opacity: .5; */
+    /* background: linear-gradient(rgb(0, 0, 0), black); */
 }
+
+.scrollNavMobile {height:100%; overflow:hidden;}
+
+
 /* ----------------------------- */
 
 /* ---------- Landing Section ------------*/
@@ -30,12 +61,27 @@ section.landingPage div.carousel{
 }
 
 section.landingPage div.carousel nav {
-    background: transparent;
+    /* background: transparent; */
     width: 100%;
     margin-top: 0;
     position: fixed;
     height: 80px;
     z-index: 999;
+        transition: all .7s;
+    /* transition: all 1s; */
+
+    /* opacity: 1; */
+
+}
+
+.hide {
+
+    /* background: black; */
+    /* transform: translateY(-100%); */
+    /* opacity: 0; */
+        transition: all .7s;
+    /* transition: all 3s; */
+
 }
 
 section.landingPage div.carousel nav ul.topnav {
@@ -50,6 +96,7 @@ section.landingPage div.carousel nav ul.topnav li {
     list-style: none;
     float: left;
     padding: 33px 22px;
+    
 }
 
 section.landingPage div.carousel nav ul.topnav li a {
@@ -62,23 +109,137 @@ section.landingPage div.carousel nav ul.topnav li a {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     color: #fff;
-    border-bottom: 2px solid transparent;
-    transition: all .7s;
+    /* border-bottom: 2px solid transparent; */
+    transition: all .3s;
 }
 
-section.landingPage div.carousel nav ul.topnav li a:hover{
+section.landingPage div.carousel nav ul.topnav li a::after{
+    content: '';
+    display: block;
+    margin-top: 5px;
+    width: 0;
+    height: 2px;
+    background: rgb(255, 71, 25);
+    transition: width .3s;
+}
+section.landingPage div.carousel nav ul.topnav li a:hover {
     cursor: pointer;
-    color: rgb(255, 71, 25);;
-    border-bottom: 2px solid rgb(255, 71, 25);;
-    transform: scaleX(1);
+    color: rgb(255, 71, 25);
 }
 
-section.landingPage div.carousel nav ul.topnav li.dropDownIcon {
+section.landingPage div.carousel nav ul.topnav li a:hover::after{
+    width: 100%;
+}
+section.landingPage div.carousel ul.navtoggle {
+    margin: 0;
+    padding: 0;
+    /* height: 30px;
+    width: 30px;
+    background-color: blue;
+     */
+    /* position: relative;
+    top: 5%;
+    left: 5%;
+    width: 5%;
+    background-color: red; */
+}
+
+section.landingPage div.carousel ul.navtoggle li.dropDownIcon {
     display: none;
     font-size: 2em;
     transition: 0.3s;
+    position: fixed;
+    /* background-color: rgb(255, 255, 255);
+    width: 9%;
+    height: 6%;
+    top: 5%; */
+
 }
 
+
+
+.hamburger {
+    background-color: rgb(255, 255, 255);
+  display: inline-block;
+  /* position: relative;   */
+  position: fixed;
+  top: 7%;
+  right: 5%;
+  height: 3px;
+  width: 30px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.712);
+  transition:all .1s;
+  
+}
+
+.hamburger::before {
+    background-color: white;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.7);
+
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 30px;
+  height: 3px;
+  transition: all 0.5s;
+}
+
+.hamburger::after {
+    background-color: white;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 30px;
+  height:3px;
+  transition:all 0.5s;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.7);
+
+}
+
+.hamburger:hover::after {
+  top: 12px;
+}
+.hamburger:hover::before {
+  top: -12px;
+}
+
+
+
+.color .hamburger {
+    background: rgb(0, 0, 0);
+}
+.color .hamburger::before {
+    background: rgb(0, 0, 0);
+}
+.color .hamburger::after {
+    background: rgb(0, 0, 0);
+}
+.active-three .hamburger {
+  background:rgba(0, 0, 0, 0);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+}
+
+ .active-three .hamburger:before {
+  top: 0;
+  transform:rotate(135deg);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.active-three .hamburger:after {
+  top: 0;
+  transform:rotate(225deg);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.7);
+}
+
+
+/* 
+.hamburger:before .color,
+.hamburger:after .color {
+background: rgb(0, 0, 0); 
+
+} */
 
 section.landingPage div.carousel div.item {
     margin: 0;
@@ -186,6 +347,23 @@ section.landingPage .bottom {
     font-weight: 900;
     color: white;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Section3 starts here*/
 
