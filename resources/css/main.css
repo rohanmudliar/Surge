@@ -198,12 +198,12 @@ section.landingPage div.carousel ul.navtoggle li.dropDownIcon {
 
 }
 
-.hamburger:hover::after {
+/* .hamburger:hover::after {
   top: 12px;
 }
 .hamburger:hover::before {
   top: -12px;
-}
+} */
 
 
 
