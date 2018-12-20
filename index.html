@@ -292,7 +292,7 @@
 
 
     <script>
-      $('.dropDownIcon').click(function () {
+      $('.hamburger').click(function () {
         $('.dropDownIcon').toggleClass('active-three');
         $('#myTopnav').toggleClass('active');
 
@@ -333,7 +333,7 @@
         } else {
 
         }
-        // $('.dropDownIcon').toggleClass('active-three');
+        // $('.hamburger').toggleClass('active-three');
         // $('#myTopnav').toggleClass('active');
         // if ($('#myTopnav').hasClass('active')) {
         //   $("body").addClass("overflowClass");
@@ -345,7 +345,7 @@
 
       var MaxScroll = 0;
       var MinScroll = 0;
-  var zero = 0;
+      var zero = 0;
       window.onscroll = function () {
         scrollFunction();
 
@@ -355,9 +355,9 @@
       //    console.log($(window).scrollBottom);
       // }
       function forhidingNav() {
-        
+
         // var currentScroll = $(window).scrollTop();
-        
+
 
 
         // if (currentScroll > MaxScroll) {
@@ -457,23 +457,23 @@
     <script>
           // $(document).click(function (e) {
           //   if (!$(e.target).is('.navtoggle'))  {
-          //     $('.dropDownIcon').toggleClass('active-three');
-          //     // $('.dropDownIcon').toggleClass('color');
+          //     $('.hamburger').toggleClass('active-three');
+          //     // $('.hamburger').toggleClass('color');
           //     $('#myTopnav').toggleClass('active');
           //   }
           // });
 
 
           // $(document).click(function (e) {
-          //   if ($name && (!$(e.target).is('.dropDownIcon'))) {
-          //     $('.dropDownIcon').removeClass('active-three');
-          //     $('.dropDownIcon').removeClass('color');
+          //   if ($name && (!$(e.target).is('.hamburger'))) {
+          //     $('.hamburger').removeClass('active-three');
+          //     $('.hamburger').removeClass('color');
           //     $('#myTopnav').removeClass('active');
           //   }
           // });
 
           // Pehle check kar ki active hai ki ny
-          // $('.dropDownIcon').click(clicked);
+          // $('.hamburger').click(clicked);
           // function clicked() {
           //   $answer = $('#myTopnav').hasClass('active');
           //   $name = $answer;
@@ -481,7 +481,7 @@
           //     console.log('inside');
           //     $(document).click(function (e) {
           //       if (!$(e.target).is('#myTopnav')) {
-          //         $('.dropDownIcon').removeClass('active-three');
+          //         $('.hamburger').removeClass('active-three');
           //         $('.dropDownIcon').removeClass('color');
           //         $('#myTopnav').removeClass('active');
           //       }
